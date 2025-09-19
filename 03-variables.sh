@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-person1="arun raj"
-person2="zion abraham"
+person1="mighty"
+person2="joy"
 
 
 
