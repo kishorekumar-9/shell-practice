@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-person1="mighty"
-person2="joy"
+person1=mighty
+person2=joy
 
 
 
