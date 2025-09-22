@@ -33,7 +33,7 @@ VALIDATE(){
     fi
 }
 
-dnf list installed mysql &>>$LOG_FILE
+dnf list installed mysql |&>>$LOG_FILE
 if [ $? -ne 0 ]
 then
     echo "MYSQL is not installed... going to install it" | tee -a $LOG_FILE
