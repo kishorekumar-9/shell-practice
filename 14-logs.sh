@@ -10,7 +10,7 @@ SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGS_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
 mkdir -p $LOGS_FOLDER
-echo "script started executing at: $(data)" &>>$LOG_FILE
+echo "script started executing at: $(date)" &>>$LOG_FILE
 
 if [ $USERID -ne 0 ]
 then
@@ -31,7 +31,7 @@ VALIDATE(){
     fi
 }
 
-dnf list installed mysql |&>>$LOG_FILE
+dnf list installed mysql &>>$LOG_FILE
 if [ $? -ne 0 ]
 then
     echo "MYSQL is not installed... going to install it" &>>$LOG_FILE
